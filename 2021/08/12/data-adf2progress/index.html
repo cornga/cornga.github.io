@@ -20,18 +20,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cornga.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="SSHR 資料更新到 ProgressData Flow (oracle&gt;oracle&gt;progress)   FLOW oracle &gt;&gt; oracle &gt;&gt; progress    DB hrlink@ADF_HRDB progress@ETL_COGNOSCM BISYS@twhr   Table EMPLOYEE0_NATIONAL_INSUR_LOG">
+<meta name="description" content="SSHR 資料更新到 Progress 流程Data Flow (oracle&gt;oracle&gt;progress)   FLOW oracle &gt;&gt; oracle &gt;&gt; progress    DB hrlink@ADF_HRDB progress@ETL_COGNOSCM BISYS@twhr   Table EMPLOYEE0_NATIONAL_INSUR_L">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SSH - DATA_sshr2progress">
+<meta property="og:title" content="SSSHR 資料更新到 Progress 流程">
 <meta property="og:url" content="https://cornga.github.io/2021/08/12/data-adf2progress/index.html">
 <meta property="og:site_name" content="Just Note">
-<meta property="og:description" content="SSHR 資料更新到 ProgressData Flow (oracle&gt;oracle&gt;progress)   FLOW oracle &gt;&gt; oracle &gt;&gt; progress    DB hrlink@ADF_HRDB progress@ETL_COGNOSCM BISYS@twhr   Table EMPLOYEE0_NATIONAL_INSUR_LOG">
+<meta property="og:description" content="SSHR 資料更新到 Progress 流程Data Flow (oracle&gt;oracle&gt;progress)   FLOW oracle &gt;&gt; oracle &gt;&gt; progress    DB hrlink@ADF_HRDB progress@ETL_COGNOSCM BISYS@twhr   Table EMPLOYEE0_NATIONAL_INSUR_L">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cornga.github.io/images/data_adf2prokgress/adf2pprgress-1.png">
 <meta property="og:image" content="https://cornga.github.io/images/data_adf2prokgress/adf2pprgress-2.png">
 <meta property="og:image" content="https://cornga.github.io/images/data_adf2prokgress/adf2pprgress-3.png">
 <meta property="article:published_time" content="2021-08-12T06:28:02.000Z">
-<meta property="article:modified_time" content="2021-08-23T02:42:49.437Z">
+<meta property="article:modified_time" content="2021-08-23T08:00:35.789Z">
 <meta property="article:author" content="Thomas Lin">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cornga.github.io/images/data_adf2prokgress/adf2pprgress-1.png">
@@ -41,10 +41,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cornga.github.io/2021/08/12/data-adf2progress/","path":"2021/08/12/data-adf2progress/","title":"SSH - DATA_sshr2progress"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cornga.github.io/2021/08/12/data-adf2progress/","path":"2021/08/12/data-adf2progress/","title":"SSSHR 資料更新到 Progress 流程"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>SSH - DATA_sshr2progress | Just Note</title>
+<title>SSSHR 資料更新到 Progress 流程 | Just Note</title>
   
 
 
@@ -112,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SSHR-%E8%B3%87%E6%96%99%E6%9B%B4%E6%96%B0%E5%88%B0-Progress"><span class="nav-number">1.</span> <span class="nav-text">SSHR 資料更新到 Progress</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Flow-oracle-gt-oracle-gt-progress"><span class="nav-number">1.1.</span> <span class="nav-text">Data Flow (oracle&gt;oracle&gt;progress)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSIS-%E7%95%AB%E9%9D%A2"><span class="nav-number">1.2.</span> <span class="nav-text">SSIS 畫面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#oracle-gt-gt-oracle"><span class="nav-number">1.3.</span> <span class="nav-text">oracle &gt;&gt; oracle</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8Cprocedure"><span class="nav-number">1.3.1.</span> <span class="nav-text">執行procedure :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9A%AB%E5%AD%98%E7%9A%84Table"><span class="nav-number">1.3.2.</span> <span class="nav-text">暫存的Table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AF%A9%E9%81%B8%E8%A6%81%E5%8C%AF%E5%85%A5%E7%9A%84%E8%B3%87%E6%96%99%E5%88%97-close-flag-2-HR%E6%A0%B8%E5%8F%AF"><span class="nav-number">1.3.3.</span> <span class="nav-text">篩選要匯入的資料列(close_flag &#x3D; 2 HR核可):</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#oracle-gt-gt-progress"><span class="nav-number">1.4.</span> <span class="nav-text">oracle &gt;&gt; progress</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E7%A8%8B%E5%9F%B7%E8%A1%8C"><span class="nav-number">1.5.</span> <span class="nav-text">排程執行</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SSHR-%E8%B3%87%E6%96%99%E6%9B%B4%E6%96%B0%E5%88%B0-Progress-%E6%B5%81%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">SSHR 資料更新到 Progress 流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Flow-oracle-gt-oracle-gt-progress"><span class="nav-number">1.1.</span> <span class="nav-text">Data Flow (oracle&gt;oracle&gt;progress)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSIS-%E7%95%AB%E9%9D%A2"><span class="nav-number">1.2.</span> <span class="nav-text">SSIS 畫面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#oracle-gt-gt-oracle"><span class="nav-number">1.3.</span> <span class="nav-text">oracle &gt;&gt; oracle</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8Cprocedure"><span class="nav-number">1.3.1.</span> <span class="nav-text">執行procedure :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9A%AB%E5%AD%98%E7%9A%84Table"><span class="nav-number">1.3.2.</span> <span class="nav-text">暫存的Table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AF%A9%E9%81%B8%E8%A6%81%E5%8C%AF%E5%85%A5%E7%9A%84%E8%B3%87%E6%96%99%E5%88%97-close-flag-2-HR%E6%A0%B8%E5%8F%AF"><span class="nav-number">1.3.3.</span> <span class="nav-text">篩選要匯入的資料列(close_flag &#x3D; 2 HR核可):</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#oracle-gt-gt-progress"><span class="nav-number">1.4.</span> <span class="nav-text">oracle &gt;&gt; progress</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E7%A8%8B%E5%9F%B7%E8%A1%8C"><span class="nav-number">1.5.</span> <span class="nav-text">排程執行</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -126,12 +126,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span>
       </div>
   </nav>
@@ -184,7 +184,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          SSH - DATA_sshr2progress
+          SSSHR 資料更新到 Progress 流程
         </h1>
 
         <div class="post-meta-container">
@@ -202,7 +202,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-08-23 10:42:49" itemprop="dateModified" datetime="2021-08-23T10:42:49+08:00">2021-08-23</time>
+        <time title="Modified: 2021-08-23 16:00:35" itemprop="dateModified" datetime="2021-08-23T16:00:35+08:00">2021-08-23</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -224,7 +224,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="SSHR-資料更新到-Progress"><a href="#SSHR-資料更新到-Progress" class="headerlink" title="SSHR 資料更新到 Progress"></a>SSHR 資料更新到 Progress</h1><h2 id="Data-Flow-oracle-gt-oracle-gt-progress"><a href="#Data-Flow-oracle-gt-oracle-gt-progress" class="headerlink" title="Data Flow (oracle&gt;oracle&gt;progress)"></a>Data Flow (oracle&gt;oracle&gt;progress)</h2><table>
+        <h1 id="SSHR-資料更新到-Progress-流程"><a href="#SSHR-資料更新到-Progress-流程" class="headerlink" title="SSHR 資料更新到 Progress 流程"></a>SSHR 資料更新到 Progress 流程</h1><h2 id="Data-Flow-oracle-gt-oracle-gt-progress"><a href="#Data-Flow-oracle-gt-oracle-gt-progress" class="headerlink" title="Data Flow (oracle&gt;oracle&gt;progress)"></a>Data Flow (oracle&gt;oracle&gt;progress)</h2><table>
 <thead>
 <tr>
 <th>FLOW</th>
@@ -274,8 +274,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/08/23/Auto-Create-Account/" rel="next" title="Auto-Create-Account">
-                  Auto-Create-Account <i class="fa fa-chevron-right"></i>
+                <a href="/2021/08/23/Auto-Create-Account/" rel="next" title="AD帳號同步到自助平台 步驟記錄">
+                  AD帳號同步到自助平台 步驟記錄 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

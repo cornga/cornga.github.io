@@ -117,12 +117,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span>
       </div>
   </nav>
@@ -161,6 +161,88 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cornga.github.io/2021/08/23/userRoleChange/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Thomas Lin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just Note">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/08/23/userRoleChange/" class="post-title-link" itemprop="url">SSHR-V2.0 自動維護角色</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-08-23 14:28:47 / Modified: 15:59:45" itemprop="dateCreated datePublished" datetime="2021-08-23T14:28:47+08:00">2021-08-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/SSHR-V2-0/" itemprop="url" rel="index"><span itemprop="name">SSHR-V2.0</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>SSHR-V2.0 自動維護角色</p>
+<h1 id="維護Boss角色"><a href="#維護Boss角色" class="headerlink" title="維護Boss角色"></a>維護Boss角色</h1><h2 id="在progress-判斷是否是主管"><a href="#在progress-判斷是否是主管" class="headerlink" title="在progress 判斷是否是主管"></a>在progress 判斷是否是主管</h2> <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@twss</span></span><br><span class="line"><span class="keyword">select</span> depx id,updep parent_id,dname title,bsid</span><br><span class="line"><span class="keyword">from</span> pub.deptree </span><br><span class="line"><span class="keyword">where</span> bsid <span class="operator">=</span> <span class="string">&#x27;4425&#x27;</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/23/userRoleChange/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://cornga.github.io/2021/08/23/Auto-Create-Account/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -174,7 +256,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/23/Auto-Create-Account/" class="post-title-link" itemprop="url">Auto-Create-Account</a>
+          <a href="/2021/08/23/Auto-Create-Account/" class="post-title-link" itemprop="url">AD帳號同步到自助平台 步驟記錄</a>
         </h2>
 
         <div class="post-meta-container">
@@ -186,7 +268,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-08-23 10:41:12 / Modified: 11:21:37" itemprop="dateCreated datePublished" datetime="2021-08-23T10:41:12+08:00">2021-08-23</time>
+      <time title="Created: 2021-08-23 10:41:12 / Modified: 16:02:13" itemprop="dateCreated datePublished" datetime="2021-08-23T10:41:12+08:00">2021-08-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -211,18 +293,15 @@
           <h1 id="AD帳號同步到自助平台-步驟記錄"><a href="#AD帳號同步到自助平台-步驟記錄" class="headerlink" title="AD帳號同步到自助平台 步驟記錄"></a>AD帳號同步到自助平台 步驟記錄</h1><h2 id="Linked-Server-連接-AD"><a href="#Linked-Server-連接-AD" class="headerlink" title="Linked Server 連接 AD"></a>Linked Server 連接 AD</h2><p>  參照:Linked Server 連接 AD測試_終於成功.docx</p>
 <h2 id="create-Table-MSSQL"><a href="#create-Table-MSSQL" class="headerlink" title="create Table (MSSQL)"></a>create Table (MSSQL)</h2><p>   create table AdUsers.docx<br>   create table AdUsers_temp.docx</p>
 <h2 id="Create-MSSQL-SP"><a href="#Create-MSSQL-SP" class="headerlink" title="Create MSSQL SP"></a>Create MSSQL SP</h2><p>create sp  sp_addAdUsers.docx</p>
-<h2 id="設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers"><a href="#設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers" class="headerlink" title="設排程 ADF_addAdUsers :將AD資料維護到table AdUsers"></a>設排程 ADF_addAdUsers :將AD資料維護到table AdUsers</h2><p><img src="/images/Auto-Create-Account/auto-create-account-1.png" alt="auto-create-account-1"></p>
-<h2 id="SSIS-create一個封裝"><a href="#SSIS-create一個封裝" class="headerlink" title="SSIS create一個封裝"></a>SSIS create一個封裝</h2><h3 id="將資料從MS-SQL匯到Oracle-Hrdb"><a href="#將資料從MS-SQL匯到Oracle-Hrdb" class="headerlink" title="將資料從MS SQL匯到Oracle Hrdb"></a>將資料從MS SQL匯到Oracle Hrdb</h3><p><img src="/images/Auto-Create-Account/auto-create-account-2.png" alt="auto-create-account-2"><br><img src="/images/Auto-Create-Account/auto-create-account-3.png" alt="auto-create-account-3"><br><img src="/images/Auto-Create-Account/auto-create-account-4.png" alt="auto-create-account-4"><br>”資料轉換”用來解決Unicode 編碼問題<br><img src="/images/Auto-Create-Account/auto-create-account-5.png" alt="auto-create-account-5"><br><img src="/images/Auto-Create-Account/auto-create-account-6.png" alt="auto-create-account-6"></p>
-<h3 id="執行一個Oracle的SP將資料維護進權限Table-au-group-detail"><a href="#執行一個Oracle的SP將資料維護進權限Table-au-group-detail" class="headerlink" title="執行一個Oracle的SP將資料維護進權限Table :au_group_detail"></a>執行一個Oracle的SP將資料維護進權限Table :au_group_detail</h3><pre><code>Oracle的SP : au_group_detail_maintain.docx
-</code></pre>
-<p>  <img src="/images/Auto-Create-Account/auto-create-account-7.png" alt="auto-create-account-7"><br>  <img src="/images/Auto-Create-Account/auto-create-account-8.png" alt="auto-create-account-8"><br>      附檔：ad_to_adf.bat  ad_to_adf.sql</p>
-<h3 id="設立MS-SQL排程執行SSIS封裝"><a href="#設立MS-SQL排程執行SSIS封裝" class="headerlink" title="設立MS SQL排程執行SSIS封裝"></a>設立MS SQL排程執行SSIS封裝</h3><p><img src="/images/Auto-Create-Account/auto-create-account-9.png" alt="auto-create-account-9"></p>
-<pre><code>若遇封裝執行ok但設成步驟，有密碼的問題 &gt;&gt;&gt; 回到SSIS
-ProtectionLevel : 要設成 EncryptAllWithPassword 
-再設定PackagePassword密碼:foxlink
-</code></pre>
-<p><img src="/images/Auto-Create-Account/auto-create-account-10.png" alt="auto-create-account-10"></p>
-
+<h2 id="設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers"><a href="#設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers" class="headerlink" title="設排程 ADF_addAdUsers :將AD資料維護到table AdUsers"></a>設排程 ADF_addAdUsers :將AD資料維護到table AdUsers</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/23/Auto-Create-Account/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -261,7 +340,7 @@ ProtectionLevel : 要設成 EncryptAllWithPassword
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/12/data-adf2progress/" class="post-title-link" itemprop="url">SSH - DATA_sshr2progress</a>
+          <a href="/2021/08/12/data-adf2progress/" class="post-title-link" itemprop="url">SSSHR 資料更新到 Progress 流程</a>
         </h2>
 
         <div class="post-meta-container">
@@ -279,7 +358,7 @@ ProtectionLevel : 要設成 EncryptAllWithPassword
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-08-23 10:42:49" itemprop="dateModified" datetime="2021-08-23T10:42:49+08:00">2021-08-23</time>
+        <time title="Modified: 2021-08-23 16:00:35" itemprop="dateModified" datetime="2021-08-23T16:00:35+08:00">2021-08-23</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -301,7 +380,7 @@ ProtectionLevel : 要設成 EncryptAllWithPassword
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="SSHR-資料更新到-Progress"><a href="#SSHR-資料更新到-Progress" class="headerlink" title="SSHR 資料更新到 Progress"></a>SSHR 資料更新到 Progress</h1><h2 id="Data-Flow-oracle-gt-oracle-gt-progress"><a href="#Data-Flow-oracle-gt-oracle-gt-progress" class="headerlink" title="Data Flow (oracle&gt;oracle&gt;progress)"></a>Data Flow (oracle&gt;oracle&gt;progress)</h2><table>
+          <h1 id="SSHR-資料更新到-Progress-流程"><a href="#SSHR-資料更新到-Progress-流程" class="headerlink" title="SSHR 資料更新到 Progress 流程"></a>SSHR 資料更新到 Progress 流程</h1><h2 id="Data-Flow-oracle-gt-oracle-gt-progress"><a href="#Data-Flow-oracle-gt-oracle-gt-progress" class="headerlink" title="Data Flow (oracle&gt;oracle&gt;progress)"></a>Data Flow (oracle&gt;oracle&gt;progress)</h2><table>
 <thead>
 <tr>
 <th>FLOW</th>
