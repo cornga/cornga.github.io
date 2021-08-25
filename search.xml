@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/08/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>JustNote建置記錄</title>
+    <url>/2021/08/11/justNote-init/</url>
+    <content><![CDATA[<h1 id="JustNote建置記錄"><a href="#JustNote建置記錄" class="headerlink" title="JustNote建置記錄"></a>JustNote建置記錄</h1><h2 id="hexo-–version"><a href="#hexo-–version" class="headerlink" title="hexo –version"></a>hexo –version</h2><p>確認相關環境已建置 &gt;&gt; node ,git ,hexo<br><img src="/images/justNote-init/justNote-init-1.png" alt="justNote-init-1"></p>
+<span id="more"></span>
+<h2 id="建立justNote專案"><a href="#建立justNote專案" class="headerlink" title="建立justNote專案"></a>建立justNote專案</h2><p><img src="/images/justNote-init/justNote-init-2.png" alt="justNote-init-2"></p>
+<h2 id="啟hexo-server"><a href="#啟hexo-server" class="headerlink" title="啟hexo server"></a>啟hexo server</h2><p><img src="/images/justNote-init/justNote-init-3.png" alt="justNote-init-3"></p>
+<h2 id="Hexo-5-之後最大特色大概就是主題終於使用-npm-來安裝而不是使用-git-clone，當然-Hexo-5-還是有保留原有的-theme-主題名稱-建立方式‧"><a href="#Hexo-5-之後最大特色大概就是主題終於使用-npm-來安裝而不是使用-git-clone，當然-Hexo-5-還是有保留原有的-theme-主題名稱-建立方式‧" class="headerlink" title="Hexo 5 之後最大特色大概就是主題終於使用 npm 來安裝而不是使用 git clone，當然 Hexo 5 還是有保留原有的 theme/[主題名稱] 建立方式‧"></a>Hexo 5 之後最大特色大概就是主題終於使用 npm 來安裝而不是使用 git clone，當然 Hexo 5 還是有保留原有的 theme/[主題名稱] 建立方式‧</h2><h2 id="透過-npm-來安裝-NexT"><a href="#透過-npm-來安裝-NexT" class="headerlink" title="透過 npm 來安裝 NexT"></a>透過 npm 來安裝 NexT</h2><p> <br>安裝最新版本： npm install hexo-theme-next@latest</p>
+<h2 id="Theme-改套用-gt-gt-next"><a href="#Theme-改套用-gt-gt-next" class="headerlink" title="Theme 改套用 &gt;&gt; next"></a>Theme 改套用 &gt;&gt; next</h2><p><img src="/images/justNote-init/justNote-init-4.png" alt="justNote-init-4"></p>
+<h2 id="複製config-檔，到根目錄，以後編輯此檔即可調整theme"><a href="#複製config-檔，到根目錄，以後編輯此檔即可調整theme" class="headerlink" title="複製config 檔，到根目錄，以後編輯此檔即可調整theme"></a>複製config 檔，到根目錄，以後編輯此檔即可調整theme</h2><p> cp node_modules/hexo-theme-next/_config.yml _config.next.yml</p>
+<h1 id="發佈到github"><a href="#發佈到github" class="headerlink" title="發佈到github"></a>發佈到github</h1><h2 id="安裝-hexo-deployer-git"><a href="#安裝-hexo-deployer-git" class="headerlink" title="安裝 hexo-deployer-git"></a>安裝 hexo-deployer-git</h2><p> <img src="/images/justNote-init/justNote-init-5.png" alt="justNote-init-5"></p>
+<h2 id="generate-amp-deployee-上傳到github"><a href="#generate-amp-deployee-上傳到github" class="headerlink" title="generate &amp; deployee 上傳到github"></a>generate &amp; deployee 上傳到github</h2> <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>SSSHR 資料更新到 Progress 流程</title>
+    <url>/2021/08/12/data-adf2progress/</url>
+    <content><![CDATA[<h1 id="SSHR-資料更新到-Progress-流程"><a href="#SSHR-資料更新到-Progress-流程" class="headerlink" title="SSHR 資料更新到 Progress 流程"></a>SSHR 資料更新到 Progress 流程</h1><h2 id="Data-Flow-oracle-gt-oracle-gt-progress"><a href="#Data-Flow-oracle-gt-oracle-gt-progress" class="headerlink" title="Data Flow (oracle&gt;oracle&gt;progress)"></a>Data Flow (oracle&gt;oracle&gt;progress)</h2><table>
+<thead>
+<tr>
+<th>FLOW</th>
+<th>oracle &gt;&gt;</th>
+<th>oracle &gt;&gt;</th>
+<th>progress</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DB</td>
+<td>hrlink@ADF_HRDB</td>
+<td>progress@ETL_COGNOSCM</td>
+<td>BISYS@twhr</td>
+</tr>
+<tr>
+<td>Table</td>
+<td>EMPLOYEE0_NATIONAL_INSUR_LOG</td>
+<td>ADF_EMPLOYEE0_TEMP</td>
+<td>PUB.EMPLOYEE0</td>
+</tr>
+</tbody></table>
+<span id="more"></span>
+<h2 id="SSIS-畫面"><a href="#SSIS-畫面" class="headerlink" title="SSIS 畫面"></a>SSIS 畫面</h2><p><img src="/images/data_adf2prokgress/adf2pprgress-1.png" alt="justNote-init-1"></p>
+<h2 id="oracle-gt-gt-oracle"><a href="#oracle-gt-gt-oracle" class="headerlink" title="oracle &gt;&gt; oracle"></a>oracle &gt;&gt; oracle</h2><h3 id="執行procedure"><a href="#執行procedure" class="headerlink" title="執行procedure :"></a>執行procedure :</h3><pre><code>progress@ETL_COGNOSCM 執行procedure : P_ADF_EMP0_TO_PGS
+</code></pre>
+<h3 id="暫存的Table"><a href="#暫存的Table" class="headerlink" title="暫存的Table"></a>暫存的Table</h3> <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> ADF_EMPLOYEE0_TEMP t </span><br></pre></td></tr></table></figure>
+
+<h3 id="篩選要匯入的資料列-close-flag-2-HR核可"><a href="#篩選要匯入的資料列-close-flag-2-HR核可" class="headerlink" title="篩選要匯入的資料列(close_flag = 2 HR核可):"></a>篩選要匯入的資料列(close_flag = 2 HR核可):</h3> <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="number">1</span> data_ori, doc_id</span><br><span class="line">      <span class="keyword">from</span> employee0_basic_log<span class="variable">@adf</span>_hr</span><br><span class="line">     <span class="keyword">where</span> close_flag <span class="operator">=</span> <span class="number">2</span></span><br><span class="line">    <span class="keyword">union</span></span><br><span class="line">    <span class="keyword">select</span> <span class="number">2</span> data_ori, doc_id</span><br><span class="line">      <span class="keyword">from</span> employee0_education_log<span class="variable">@adf</span>_hr</span><br><span class="line">     <span class="keyword">where</span> close_flag <span class="operator">=</span> <span class="number">2</span></span><br><span class="line">    <span class="keyword">union</span></span><br><span class="line">    <span class="keyword">select</span> <span class="number">3</span> data_ori, doc_id</span><br><span class="line">      <span class="keyword">from</span> employee0_group_insur_log<span class="variable">@adf</span>_hr</span><br><span class="line">     <span class="keyword">where</span> close_flag <span class="operator">=</span> <span class="number">2</span></span><br><span class="line">    <span class="keyword">union</span></span><br><span class="line">    <span class="keyword">select</span> <span class="number">4</span> data_ori, doc_id</span><br><span class="line">      <span class="keyword">from</span> employee0_licence_log<span class="variable">@adf</span>_hr</span><br><span class="line">     <span class="keyword">where</span> close_flag <span class="operator">=</span> <span class="number">2</span></span><br><span class="line">    <span class="keyword">union</span></span><br><span class="line">    <span class="keyword">select</span> <span class="number">5</span> data_ori, doc_id</span><br><span class="line">      <span class="keyword">from</span> employee0_national_insur_log<span class="variable">@adf</span>_hr</span><br><span class="line">     <span class="keyword">where</span> close_flag <span class="operator">=</span> <span class="number">2</span></span><br><span class="line">    <span class="keyword">UNION</span> </span><br><span class="line">    <span class="keyword">SELECT</span> <span class="number">6</span> data_ori, doc_id</span><br><span class="line">        <span class="keyword">FROM</span> employee0_retire_log<span class="variable">@adf</span>_hr</span><br><span class="line">       <span class="keyword">WHERE</span> close_flag <span class="operator">=</span> <span class="number">2</span></span><br><span class="line">     <span class="keyword">order</span> <span class="keyword">by</span> doc_id;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="oracle-gt-gt-progress"><a href="#oracle-gt-gt-progress" class="headerlink" title="oracle &gt;&gt; progress"></a>oracle &gt;&gt; progress</h2><p><img src="/images/data_adf2prokgress/adf2pprgress-2.png" alt="justNote-init-2"></p>
+<h2 id="排程執行"><a href="#排程執行" class="headerlink" title="排程執行"></a>排程執行</h2><p><img src="/images/data_adf2prokgress/adf2pprgress-3.png" alt="justNote-init-3"></p>
+]]></content>
+      <categories>
+        <category>SSHR-V1.0</category>
+        <category>dataFlow</category>
+      </categories>
+      <tags>
+        <tag>SSHR</tag>
+        <tag>Progress</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AD帳號同步到自助平台 步驟記錄</title>
+    <url>/2021/08/23/Auto-Create-Account/</url>
+    <content><![CDATA[<h1 id="AD帳號同步到自助平台-步驟記錄"><a href="#AD帳號同步到自助平台-步驟記錄" class="headerlink" title="AD帳號同步到自助平台 步驟記錄"></a>AD帳號同步到自助平台 步驟記錄</h1><h2 id="Linked-Server-連接-AD"><a href="#Linked-Server-連接-AD" class="headerlink" title="Linked Server 連接 AD"></a>Linked Server 連接 AD</h2><p>  參照:Linked Server 連接 AD測試_終於成功.docx</p>
+<h2 id="create-Table-MSSQL"><a href="#create-Table-MSSQL" class="headerlink" title="create Table (MSSQL)"></a>create Table (MSSQL)</h2><p>   create table AdUsers.docx<br>   create table AdUsers_temp.docx</p>
+<h2 id="Create-MSSQL-SP"><a href="#Create-MSSQL-SP" class="headerlink" title="Create MSSQL SP"></a>Create MSSQL SP</h2><p>create sp  sp_addAdUsers.docx</p>
+<h2 id="設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers"><a href="#設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers" class="headerlink" title="設排程 ADF_addAdUsers :將AD資料維護到table AdUsers"></a>設排程 ADF_addAdUsers :將AD資料維護到table AdUsers</h2><span id="more"></span>
+
+<p><img src="/images/Auto-Create-Account/auto-create-account-1.png" alt="auto-create-account-1"></p>
+<h2 id="SSIS-create一個封裝"><a href="#SSIS-create一個封裝" class="headerlink" title="SSIS create一個封裝"></a>SSIS create一個封裝</h2><h3 id="將資料從MS-SQL匯到Oracle-Hrdb"><a href="#將資料從MS-SQL匯到Oracle-Hrdb" class="headerlink" title="將資料從MS SQL匯到Oracle Hrdb"></a>將資料從MS SQL匯到Oracle Hrdb</h3><p><img src="/images/Auto-Create-Account/auto-create-account-2.png" alt="auto-create-account-2"><br><img src="/images/Auto-Create-Account/auto-create-account-3.png" alt="auto-create-account-3"><br><img src="/images/Auto-Create-Account/auto-create-account-4.png" alt="auto-create-account-4"><br>”資料轉換”用來解決Unicode 編碼問題<br><img src="/images/Auto-Create-Account/auto-create-account-5.png" alt="auto-create-account-5"><br><img src="/images/Auto-Create-Account/auto-create-account-6.png" alt="auto-create-account-6"></p>
+<h3 id="執行一個Oracle的SP將資料維護進權限Table-au-group-detail"><a href="#執行一個Oracle的SP將資料維護進權限Table-au-group-detail" class="headerlink" title="執行一個Oracle的SP將資料維護進權限Table :au_group_detail"></a>執行一個Oracle的SP將資料維護進權限Table :au_group_detail</h3><pre><code>hrlink@ADF_HRDB的SP : au_group_detail_maintain (維護帳號及角色)
+</code></pre>
+<p>  <img src="/images/Auto-Create-Account/auto-create-account-7.png" alt="auto-create-account-7"><br>  <img src="/images/Auto-Create-Account/auto-create-account-8.png" alt="auto-create-account-8"><br>      附檔：ad_to_adf.bat  ad_to_adf.sql</p>
+<h3 id="設立MS-SQL排程執行SSIS封裝"><a href="#設立MS-SQL排程執行SSIS封裝" class="headerlink" title="設立MS SQL排程執行SSIS封裝"></a>設立MS SQL排程執行SSIS封裝</h3><p><img src="/images/Auto-Create-Account/auto-create-account-9.png" alt="auto-create-account-9"></p>
+<pre><code>若遇封裝執行ok但設成步驟，有密碼的問題 &gt;&gt;&gt; 回到SSIS
+ProtectionLevel : 要設成 EncryptAllWithPassword 
+再設定PackagePassword密碼:foxlink
+</code></pre>
+<p><img src="/images/Auto-Create-Account/auto-create-account-10.png" alt="auto-create-account-10"></p>
+]]></content>
+      <categories>
+        <category>SSHR-V1.0</category>
+      </categories>
+      <tags>
+        <tag>SSHR</tag>
+        <tag>account</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SSHR-V2.0 自動維護角色</title>
+    <url>/2021/08/23/userRoleChange/</url>
+    <content><![CDATA[<p>SSHR-V2.0 自動維護角色</p>
+<h1 id="維護Boss角色"><a href="#維護Boss角色" class="headerlink" title="維護Boss角色"></a>維護Boss角色</h1><h2 id="在progress-判斷是否是主管"><a href="#在progress-判斷是否是主管" class="headerlink" title="在progress 判斷是否是主管"></a>在progress 判斷是否是主管</h2> <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="variable">@twss</span></span><br><span class="line"><span class="keyword">select</span> depx id,updep parent_id,dname title,bsid</span><br><span class="line"><span class="keyword">from</span> pub.deptree </span><br><span class="line"><span class="keyword">where</span> bsid <span class="operator">=</span> <span class="string">&#x27;4425&#x27;</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h2 id="在-MongoDB-維護主管角色"><a href="#在-MongoDB-維護主管角色" class="headerlink" title="在 MongoDB 維護主管角色"></a>在 MongoDB 維護主管角色</h2> <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"> <span class="comment">// 檢查是否已經有加入BOSS角色，若沒有則加入</span></span><br><span class="line"> <span class="comment">// &#123;name:&quot;Boss&quot;,id:2&#125; </span></span><br><span class="line"><span class="built_in">this</span>.$api.login</span><br><span class="line">  .maintainBossRole(accountName)</span><br></pre></td></tr></table></figure>
+
+<h1 id="維護富港聘僱人員角色"><a href="#維護富港聘僱人員角色" class="headerlink" title="維護富港聘僱人員角色"></a>維護富港聘僱人員角色</h1><pre><code>富港聘僱人員 將角色由預設的 N_USER (3) 改為CUINT_USER (4)
+</code></pre>
+<h2 id="Oracle中抓db-name-amp-d-i-cd"><a href="#Oracle中抓db-name-amp-d-i-cd" class="headerlink" title="Oracle中抓db_name &amp; d_i_cd"></a>Oracle中抓db_name &amp; d_i_cd</h2><pre><code> oracle api &gt;&gt;db_apis &gt;&gt;dbname.js
+ this.l_dbName == &quot;CUINT&quot; ||this.l_dbName == &quot;TSCI&quot;  &gt;&gt;富港人員
+</code></pre>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> emp.emp_name,emp.db_name,emp.d_i_cd  </span><br><span class="line">  <span class="keyword">FROM</span> employee0 emp</span><br><span class="line"> <span class="keyword">where</span> emp.emp_cd <span class="operator">=</span> <span class="string">&#x27;6447&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="login-vue-中比對"><a href="#login-vue-中比對" class="headerlink" title="login.vue 中比對"></a>login.vue 中比對</h2><pre><code>富港聘僱人員 將角色由預設的 N_USER (3) 改為CUINT_USER (4)
+富港轉正崴  將角色由CUINT_USER 改為 N_USER
+正崴直接人員 將角色由改為 D_USER &gt;&gt; id:5
+富港直接人員 將角色由改為 D_CUINT_USER &gt;&gt; id:6
+</code></pre>
+<h2 id="MongoDB-執行變更角色"><a href="#MongoDB-執行變更角色" class="headerlink" title="MongoDB 執行變更角色"></a>MongoDB 執行變更角色</h2><pre><code>mongo api &gt;&gt; controller &gt;&gt; user-router.js &gt;&gt; userRoleChange
+</code></pre>
+<h1 id="維護正崴直接人員角色"><a href="#維護正崴直接人員角色" class="headerlink" title="維護正崴直接人員角色"></a>維護正崴直接人員角色</h1><pre><code>正崴直接人員 將角色由預設的 N_USER (3) 改為 D_USER (5)
+</code></pre>
+<h2 id="Oracle中抓db-name-amp-d-i-cd-1"><a href="#Oracle中抓db-name-amp-d-i-cd-1" class="headerlink" title="Oracle中抓db_name &amp; d_i_cd"></a>Oracle中抓db_name &amp; d_i_cd</h2><pre><code> oracle api &gt;&gt;db_apis &gt;&gt;dbname.js
+</code></pre>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> emp.emp_name,emp.db_name,emp.d_i_cd  </span><br><span class="line">  <span class="keyword">FROM</span> employee0 emp</span><br><span class="line"> <span class="keyword">where</span> emp.emp_cd <span class="operator">=</span> <span class="string">&#x27;6447&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="login-vue-中比對-1"><a href="#login-vue-中比對-1" class="headerlink" title="login.vue 中比對"></a>login.vue 中比對</h2><pre><code>正崴直接人員 將角色由改為 D_USER &gt;&gt; id:5
+富港直接人員 將角色由改為 D_CUINT_USER &gt;&gt; id:6
+</code></pre>
+<h2 id="MongoDB-執行變更角色-1"><a href="#MongoDB-執行變更角色-1" class="headerlink" title="MongoDB 執行變更角色"></a>MongoDB 執行變更角色</h2><pre><code>mongo api &gt;&gt; controller &gt;&gt; user-router.js &gt;&gt; userRoleChange
+</code></pre>
+]]></content>
+      <categories>
+        <category>SSHR-V2.0</category>
+      </categories>
+      <tags>
+        <tag>SSHR</tag>
+        <tag>Role</tag>
+      </tags>
+  </entry>
+</search>
