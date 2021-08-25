@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cornga.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="JustNote建置記錄hexo –version確認相關環境已建置 &gt;&gt; node ,git ,hexo">
+<meta name="description" content="JustNote建置記錄hexo –version安裝 Hexo 1npm install -g hexo-cli  確認相關環境已建置 &gt;&gt; node ,git ,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JustNote建置記錄">
 <meta property="og:url" content="https://cornga.github.io/2021/08/11/justNote-init/index.html">
 <meta property="og:site_name" content="Just Note">
-<meta property="og:description" content="JustNote建置記錄hexo –version確認相關環境已建置 &gt;&gt; node ,git ,hexo">
+<meta property="og:description" content="JustNote建置記錄hexo –version安裝 Hexo 1npm install -g hexo-cli  確認相關環境已建置 &gt;&gt; node ,git ,hexo">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cornga.github.io/images/justNote-init/justNote-init-1.png">
 <meta property="og:image" content="https://cornga.github.io/images/justNote-init/justNote-init-2.png">
@@ -33,8 +33,9 @@
 <meta property="og:image" content="https://cornga.github.io/images/justNote-init/justNote-init-4.png">
 <meta property="og:image" content="https://cornga.github.io/images/justNote-init/justNote-init-5.png">
 <meta property="article:published_time" content="2021-08-11T08:25:38.000Z">
-<meta property="article:modified_time" content="2021-08-12T06:33:50.175Z">
+<meta property="article:modified_time" content="2021-08-25T06:11:23.271Z">
 <meta property="article:author" content="Thomas Lin">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cornga.github.io/images/justNote-init/justNote-init-1.png">
 
@@ -168,18 +169,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -250,8 +251,17 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-08-12 14:33:50" itemprop="dateModified" datetime="2021-08-12T14:33:50+08:00">2021-08-12</time>
+        <time title="Modified: 2021-08-25 14:11:23" itemprop="dateModified" datetime="2021-08-25T14:11:23+08:00">2021-08-25</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+    </span>
 
   
 </div>
@@ -263,7 +273,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="JustNote建置記錄"><a href="#JustNote建置記錄" class="headerlink" title="JustNote建置記錄"></a>JustNote建置記錄</h1><h2 id="hexo-–version"><a href="#hexo-–version" class="headerlink" title="hexo –version"></a>hexo –version</h2><p>確認相關環境已建置 &gt;&gt; node ,git ,hexo<br><img src="/images/justNote-init/justNote-init-1.png" alt="justNote-init-1"></p>
+        <h1 id="JustNote建置記錄"><a href="#JustNote建置記錄" class="headerlink" title="JustNote建置記錄"></a>JustNote建置記錄</h1><h2 id="hexo-–version"><a href="#hexo-–version" class="headerlink" title="hexo –version"></a>hexo –version</h2><p>安裝 Hexo</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>確認相關環境已建置 &gt;&gt; node ,git ,hexo<br><img src="/images/justNote-init/justNote-init-1.png" alt="justNote-init-1"></p>
 <span id="more"></span>
 <h2 id="建立justNote專案"><a href="#建立justNote專案" class="headerlink" title="建立justNote專案"></a>建立justNote專案</h2><p><img src="/images/justNote-init/justNote-init-2.png" alt="justNote-init-2"></p>
 <h2 id="啟hexo-server"><a href="#啟hexo-server" class="headerlink" title="啟hexo server"></a>啟hexo server</h2><p><img src="/images/justNote-init/justNote-init-3.png" alt="justNote-init-3"></p>
@@ -279,6 +292,9 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
 
         
 

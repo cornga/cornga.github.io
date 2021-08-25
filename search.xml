@@ -17,11 +17,17 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
   </entry>
   <entry>
     <title>JustNote建置記錄</title>
     <url>/2021/08/11/justNote-init/</url>
-    <content><![CDATA[<h1 id="JustNote建置記錄"><a href="#JustNote建置記錄" class="headerlink" title="JustNote建置記錄"></a>JustNote建置記錄</h1><h2 id="hexo-–version"><a href="#hexo-–version" class="headerlink" title="hexo –version"></a>hexo –version</h2><p>確認相關環境已建置 &gt;&gt; node ,git ,hexo<br><img src="/images/justNote-init/justNote-init-1.png" alt="justNote-init-1"></p>
+    <content><![CDATA[<h1 id="JustNote建置記錄"><a href="#JustNote建置記錄" class="headerlink" title="JustNote建置記錄"></a>JustNote建置記錄</h1><h2 id="hexo-–version"><a href="#hexo-–version" class="headerlink" title="hexo –version"></a>hexo –version</h2><p>安裝 Hexo</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>確認相關環境已建置 &gt;&gt; node ,git ,hexo<br><img src="/images/justNote-init/justNote-init-1.png" alt="justNote-init-1"></p>
 <span id="more"></span>
 <h2 id="建立justNote專案"><a href="#建立justNote專案" class="headerlink" title="建立justNote專案"></a>建立justNote專案</h2><p><img src="/images/justNote-init/justNote-init-2.png" alt="justNote-init-2"></p>
 <h2 id="啟hexo-server"><a href="#啟hexo-server" class="headerlink" title="啟hexo server"></a>啟hexo server</h2><p><img src="/images/justNote-init/justNote-init-3.png" alt="justNote-init-3"></p>
@@ -30,6 +36,12 @@
 <h2 id="複製config-檔，到根目錄，以後編輯此檔即可調整theme"><a href="#複製config-檔，到根目錄，以後編輯此檔即可調整theme" class="headerlink" title="複製config 檔，到根目錄，以後編輯此檔即可調整theme"></a>複製config 檔，到根目錄，以後編輯此檔即可調整theme</h2><p> cp node_modules/hexo-theme-next/_config.yml _config.next.yml</p>
 <h1 id="發佈到github"><a href="#發佈到github" class="headerlink" title="發佈到github"></a>發佈到github</h1><h2 id="安裝-hexo-deployer-git"><a href="#安裝-hexo-deployer-git" class="headerlink" title="安裝 hexo-deployer-git"></a>安裝 hexo-deployer-git</h2><p> <img src="/images/justNote-init/justNote-init-5.png" alt="justNote-init-5"></p>
 <h2 id="generate-amp-deployee-上傳到github"><a href="#generate-amp-deployee-上傳到github" class="headerlink" title="generate &amp; deployee 上傳到github"></a>generate &amp; deployee 上傳到github</h2> <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>SSSHR 資料更新到 Progress 流程</title>
@@ -81,10 +93,9 @@
     <url>/2021/08/23/Auto-Create-Account/</url>
     <content><![CDATA[<h1 id="AD帳號同步到自助平台-步驟記錄"><a href="#AD帳號同步到自助平台-步驟記錄" class="headerlink" title="AD帳號同步到自助平台 步驟記錄"></a>AD帳號同步到自助平台 步驟記錄</h1><h2 id="Linked-Server-連接-AD"><a href="#Linked-Server-連接-AD" class="headerlink" title="Linked Server 連接 AD"></a>Linked Server 連接 AD</h2><p>  參照:Linked Server 連接 AD測試_終於成功.docx</p>
 <h2 id="create-Table-MSSQL"><a href="#create-Table-MSSQL" class="headerlink" title="create Table (MSSQL)"></a>create Table (MSSQL)</h2><p>   create table AdUsers.docx<br>   create table AdUsers_temp.docx</p>
+<span id="more"></span>
 <h2 id="Create-MSSQL-SP"><a href="#Create-MSSQL-SP" class="headerlink" title="Create MSSQL SP"></a>Create MSSQL SP</h2><p>create sp  sp_addAdUsers.docx</p>
-<h2 id="設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers"><a href="#設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers" class="headerlink" title="設排程 ADF_addAdUsers :將AD資料維護到table AdUsers"></a>設排程 ADF_addAdUsers :將AD資料維護到table AdUsers</h2><span id="more"></span>
-
-<p><img src="/images/Auto-Create-Account/auto-create-account-1.png" alt="auto-create-account-1"></p>
+<h2 id="設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers"><a href="#設排程-ADF-addAdUsers-將AD資料維護到table-AdUsers" class="headerlink" title="設排程 ADF_addAdUsers :將AD資料維護到table AdUsers"></a>設排程 ADF_addAdUsers :將AD資料維護到table AdUsers</h2><p><img src="/images/Auto-Create-Account/auto-create-account-1.png" alt="auto-create-account-1"></p>
 <h2 id="SSIS-create一個封裝"><a href="#SSIS-create一個封裝" class="headerlink" title="SSIS create一個封裝"></a>SSIS create一個封裝</h2><h3 id="將資料從MS-SQL匯到Oracle-Hrdb"><a href="#將資料從MS-SQL匯到Oracle-Hrdb" class="headerlink" title="將資料從MS SQL匯到Oracle Hrdb"></a>將資料從MS SQL匯到Oracle Hrdb</h3><p><img src="/images/Auto-Create-Account/auto-create-account-2.png" alt="auto-create-account-2"><br><img src="/images/Auto-Create-Account/auto-create-account-3.png" alt="auto-create-account-3"><br><img src="/images/Auto-Create-Account/auto-create-account-4.png" alt="auto-create-account-4"><br>”資料轉換”用來解決Unicode 編碼問題<br><img src="/images/Auto-Create-Account/auto-create-account-5.png" alt="auto-create-account-5"><br><img src="/images/Auto-Create-Account/auto-create-account-6.png" alt="auto-create-account-6"></p>
 <h3 id="執行一個Oracle的SP將資料維護進權限Table-au-group-detail"><a href="#執行一個Oracle的SP將資料維護進權限Table-au-group-detail" class="headerlink" title="執行一個Oracle的SP將資料維護進權限Table :au_group_detail"></a>執行一個Oracle的SP將資料維護進權限Table :au_group_detail</h3><pre><code>hrlink@ADF_HRDB的SP : au_group_detail_maintain (維護帳號及角色)
 </code></pre>
@@ -142,6 +153,34 @@ ProtectionLevel : 要設成 EncryptAllWithPassword
       <tags>
         <tag>SSHR</tag>
         <tag>Role</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 基礎語法</title>
+    <url>/2021/08/25/markdown-1/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(ls_name = <span class="string">&#x27;Thomas&#x27;</span>)&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;Hello Thomas&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>圖片<br>圖片的語法和文字超連結很像，只是在語法開頭再加上 !，中括弧內指的是圖片的”替代文字”(當圖片連結失效後會顯示的文字，如下面的 FB Logo)：</p>
+<p><img src="https://s1.yimg.com/rz/d/yahoo_frontpage_zh-Hant-TW_s_f_p_bestfit_frontpage_2x.png" alt="奇摩首頁Logo"><br><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google首頁Logo"><br><img src="123.png" alt="FB Logo"></p>
+<hr>
+<p>表格<br>表格的基本語法如下，第一列是表格的標題列，然後第二列固定要是以 — 做區隔，加欄位都是使用 | 來添加。注意表格的每欄寬度會自動分配，所以可以忽略一切的空格(也就是每列的 | 沒有對齊也沒關係，且加多少空格也不會影響每欄的寬度)。</p>
+<p>| Column 1 | Column 2 | Column 3 |<br>| ——– | ——– | ——– |<br>| Text1 | Text2 | Text3 |<br>| Text4    | Text5    | Text6    |</p>
+<hr>
+<p>而每欄可以決定要如何對齊，對齊方式取決於第二列的 —，再加上 : 符號：</p>
+<p>:— 靠左對齊。<br>—: 靠右對齊。<br>:—: 置中對齊。</p>
+<hr>
+<p>注意事項<br>某些語法的外觀樣式如：引用、分隔線、項目符號等，會因為使用者套用的 Hexo 主題而有不同。</p>
+<p>圖片可以放在 Hexo 資料夾一併上傳到 GitHub，例如圖片 123.jpg 放到 myblog/source/images 路徑下，然後圖片語法連結的地方輸入 /images/123.jpg ，就會顯示該圖片。<br>不過這種方法筆者不建議(也就是不建議把 GitHub 當作圖床用)，因為當文章一多，會有機會達到 GitHub Pages 的使用限制；因此可以搜尋各大免費圖床來使用，如 Imgur, Upload.cc 等。</p>
+<p>HTML 語法盡量包在 Markdown 語法裡面，否則可能會造成一些顯示上的錯誤，舉例如下：</p>
+<p>語法撰寫範例一：將「今天天氣真好。」顯示粗體並更改為紅色<br><strong><font color=#FF0000>今天天氣真好。</font></strong></p>
+<p>語法撰寫範例二：將「Title」設定成等級一標題並更改為藍色<br># <font color=#0000FF>Title</font><br>呈上，因為 HTML 語法和 Markdown 語法交錯使用，在 hexo-admin 文章後台的編輯區和預覽區可能會有顯示問題，請先 publish 後，以 localhost 的文章頁面顯示為準。</p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
