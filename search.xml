@@ -78,6 +78,11 @@
 
 <h2 id="oracle-gt-gt-progress"><a href="#oracle-gt-gt-progress" class="headerlink" title="oracle &gt;&gt; progress"></a>oracle &gt;&gt; progress</h2><p><img src="/images/data_adf2prokgress/adf2pprgress-2.png" alt="justNote-init-2"></p>
 <h2 id="排程執行"><a href="#排程執行" class="headerlink" title="排程執行"></a>排程執行</h2><p><img src="/images/data_adf2prokgress/adf2pprgress-3.png" alt="justNote-init-3"></p>
+<h2 id="Progress-內部更新流程"><a href="#Progress-內部更新流程" class="headerlink" title="Progress 內部更新流程"></a>Progress 內部更新流程</h2><pre><code>資料匯入pub.employee0 TX_FLAG=2,隨即被複製到正式TABLE 然後刪掉該筆
+所以一般只會看到TX_FLAG=&quot;Y&quot;或&quot;N&quot; 的那一筆
+如果有TX_FLAG= &quot;N&quot; 的資料，每天中午會匯到SSHR然後將 TX_FLAG= &quot;Y&quot;
+</code></pre>
+<p><img src="/images/data_adf2prokgress/adf2pprgress-4.png" alt="justNote-init-4"></p>
 ]]></content>
       <categories>
         <category>SSHR-V1.0</category>
